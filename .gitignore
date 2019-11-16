@@ -1,3 +1,4 @@
+.idea
 .env
 serviceAccountKey.json
 node_modules

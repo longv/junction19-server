@@ -1,4 +1,5 @@
 import 'dotenv/config';
+import visitsRouter from './routes/visits';
 
 var createError = require('http-errors');
 var express = require('express');
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/visits', visitsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
